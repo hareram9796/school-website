@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Sri Vidya Academy</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand"><div class="brand-logo">🎓</div><div><span class="brand-name">Sri Vidya Academy</span><small>Excellence in Education</small></div></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Classes</a></li><li><a href="admissions.html">Admissions</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+    <li><a href="admissions.html" class="btn-admit">Apply Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+</nav>
+
+<div class="page-hero">
+  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80" alt="Gallery" class="page-hero-bg"/>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content"><h1>School Gallery</h1><p>Moments that define our journey</p></div>
+</div>
+
+<section class="gallery-page">
+  <div class="container">
+    <div class="gallery-tabs">
+      <button class="gtab active" onclick="filterGallery(this,'all')">All</button>
+      <button class="gtab" onclick="filterGallery(this,'campus')">Campus</button>
+      <button class="gtab" onclick="filterGallery(this,'events')">Events</button>
+      <button class="gtab" onclick="filterGallery(this,'sports')">Sports</button>
+      <button class="gtab" onclick="filterGallery(this,'academics')">Academics</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gal-item" data-cat="campus"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="School Building"/><div class="gal-overlay"><span>School Building</span></div></div>
+      <div class="gal-item" data-cat="academics"><img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80" alt="Classroom"/><div class="gal-overlay"><span>Smart Classroom</span></div></div>
+      <div class="gal-item" data-cat="sports"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Sports"/><div class="gal-overlay"><span>Sports Day</span></div></div>
+      <div class="gal-item" data-cat="campus"><img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80" alt="Library"/><div class="gal-overlay"><span>Library</span></div></div>
+      <div class="gal-item" data-cat="academics"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Science Lab"/><div class="gal-overlay"><span>Science Lab</span></div></div>
+      <div class="gal-item" data-cat="events"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80" alt="Annual Day"/><div class="gal-overlay"><span>Annual Day</span></div></div>
+      <div class="gal-item" data-cat="sports"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&q=80" alt="Basketball"/><div class="gal-overlay"><span>Basketball Court</span></div></div>
+      <div class="gal-item" data-cat="events"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="Graduation"/><div class="gal-overlay"><span>Graduation Ceremony</span></div></div>
+      <div class="gal-item" data-cat="academics"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Computer Lab"/><div class="gal-overlay"><span>Computer Lab</span></div></div>
+      <div class="gal-item" data-cat="campus"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Campus"/><div class="gal-overlay"><span>Campus View</span></div></div>
+      <div class="gal-item" data-cat="events"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Science Fair"/><div class="gal-overlay"><span>Science Fair</span></div></div>
+      <div class="gal-item" data-cat="sports"><img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?w=600&q=80" alt="Cricket"/><div class="gal-overlay"><span>Cricket Ground</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lb-prev" onclick="lbNav(-1,event)"><i class="fas fa-chevron-left"></i></button>
+  <img id="lbImg" src="" alt=""/>
+  <span id="lbCaption"></span>
+  <button class="lb-next" onclick="lbNav(1,event)"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col"><h3>🎓 Sri Vidya Academy</h3><p>Nurturing young minds since 1999.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone"></i> +91 98765 43210</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Sri Vidya Academy. All Rights Reserved.</p></div>
+</footer>
+<script src="school.js"></script>
+</body>
+</html>
