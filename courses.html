@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classes — Sri Vidya Academy</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand"><div class="brand-logo">🎓</div><div><span class="brand-name">Sri Vidya Academy</span><small>Excellence in Education</small></div></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="courses.html" class="active">Classes</a></li><li><a href="admissions.html">Admissions</a></li>
+    <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+    <li><a href="admissions.html" class="btn-admit">Apply Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+</nav>
+
+<div class="page-hero">
+  <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1400&q=80" alt="Classes" class="page-hero-bg"/>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content"><h1>Classes & Curriculum</h1><p>Comprehensive education from Nursery to Class XII</p></div>
+</div>
+
+<section class="courses-page">
+  <div class="container">
+    <div class="section-head"><span class="tag">Academic Programs</span><h2>Our Classes & Programs</h2><p>Structured curriculum designed for holistic development at every stage</p></div>
+
+    <div class="course-section">
+      <div class="course-header" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+        <div class="course-icon">🌱</div>
+        <div><h3>Pre-Primary (Nursery – UKG)</h3><p>Age: 3–6 years</p></div>
+      </div>
+      <div class="course-body">
+        <div class="course-desc"><p>Our pre-primary program focuses on play-based learning, developing motor skills, language, and social skills in a safe and nurturing environment.</p></div>
+        <div class="course-subjects"><h4>Key Focus Areas:</h4><div class="subject-tags"><span>Phonics & Reading</span><span>Numbers & Shapes</span><span>Art & Craft</span><span>Music & Dance</span><span>Physical Activities</span><span>Social Skills</span></div></div>
+        <div class="course-features"><div class="cf-item"><i class="fas fa-users"></i><span>Max 20 students per class</span></div><div class="cf-item"><i class="fas fa-clock"></i><span>8:30 AM – 12:30 PM</span></div><div class="cf-item"><i class="fas fa-star"></i><span>Activity-based learning</span></div></div>
+        <a href="admissions.html" class="btn-primary" style="margin-top:16px">Apply for Pre-Primary</a>
+      </div>
+    </div>
+
+    <div class="course-section">
+      <div class="course-header" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">
+        <div class="course-icon">📚</div>
+        <div><h3>Primary (Class I – V)</h3><p>Age: 6–11 years</p></div>
+      </div>
+      <div class="course-body">
+        <div class="course-desc"><p>Building strong foundations in core subjects while encouraging curiosity, creativity, and a love for learning through interactive teaching methods.</p></div>
+        <div class="course-subjects"><h4>Subjects Offered:</h4><div class="subject-tags"><span>English</span><span>Hindi / Telugu</span><span>Mathematics</span><span>Environmental Science</span><span>Computer Basics</span><span>Art & Craft</span><span>Physical Education</span></div></div>
+        <div class="course-features"><div class="cf-item"><i class="fas fa-users"></i><span>Max 35 students per class</span></div><div class="cf-item"><i class="fas fa-clock"></i><span>8:30 AM – 3:30 PM</span></div><div class="cf-item"><i class="fas fa-laptop"></i><span>Smart classroom teaching</span></div></div>
+        <a href="admissions.html" class="btn-primary" style="margin-top:16px">Apply for Primary</a>
+      </div>
+    </div>
+
+    <div class="course-section">
+      <div class="course-header" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">
+        <div class="course-icon">🔬</div>
+        <div><h3>Secondary (Class VI – X)</h3><p>Age: 11–16 years</p></div>
+      </div>
+      <div class="course-body">
+        <div class="course-desc"><p>Rigorous academic preparation for board examinations with focus on conceptual understanding, problem-solving, and competitive exam readiness.</p></div>
+        <div class="course-subjects"><h4>Subjects Offered:</h4><div class="subject-tags"><span>English</span><span>Hindi / Telugu</span><span>Mathematics</span><span>Science</span><span>Social Studies</span><span>Computer Science</span><span>Sanskrit / French</span></div></div>
+        <div class="course-features"><div class="cf-item"><i class="fas fa-trophy"></i><span>98% Board pass rate</span></div><div class="cf-item"><i class="fas fa-flask"></i><span>Dedicated science labs</span></div><div class="cf-item"><i class="fas fa-book"></i><span>Extra coaching available</span></div></div>
+        <a href="admissions.html" class="btn-primary" style="margin-top:16px">Apply for Secondary</a>
+      </div>
+    </div>
+
+    <div class="course-section">
+      <div class="course-header" style="background:linear-gradient(135deg,#fa709a,#fee140)">
+        <div class="course-icon">🎓</div>
+        <div><h3>Senior Secondary (Class XI – XII)</h3><p>Age: 16–18 years</p></div>
+      </div>
+      <div class="course-body">
+        <div class="course-desc"><p>Specialized streams preparing students for higher education, competitive exams (JEE, NEET, CA), and professional careers.</p></div>
+        <div class="course-subjects"><h4>Streams Available:</h4><div class="subject-tags"><span>Science (PCM)</span><span>Science (PCB)</span><span>Commerce</span><span>Computer Science</span><span>Economics</span><span>Business Studies</span></div></div>
+        <div class="course-features"><div class="cf-item"><i class="fas fa-university"></i><span>JEE / NEET coaching</span></div><div class="cf-item"><i class="fas fa-chart-line"></i><span>Career counselling</span></div><div class="cf-item"><i class="fas fa-star"></i><span>95%+ board results</span></div></div>
+        <a href="admissions.html" class="btn-primary" style="margin-top:16px">Apply for Senior Secondary</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col"><h3>🎓 Sri Vidya Academy</h3><p>Nurturing young minds since 1999.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone"></i> +91 98765 43210</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Sri Vidya Academy. All Rights Reserved.</p></div>
+</footer>
+<script src="school.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Vidya Academy — Excellence in Education</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="brand-logo">🎓</div>
+    <div>
+      <span class="brand-name">Sri Vidya Academy</span>
+      <small>Excellence in Education</small>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Classes</a></li>
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="admissions.html" class="btn-admit">Apply Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80" alt="School" class="hero-bg"/>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-award"></i> Ranked #1 School in the District 2024</div>
+    <h1>Shaping Tomorrow's<br/><span>Leaders Today</span></h1>
+    <p>Quality education from Nursery to Class XII with experienced faculty, modern facilities, and a proven track record of excellence.</p>
+    <div class="hero-btns">
+      <a href="admissions.html" class="btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+      <a href="about.html" class="btn-outline">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><strong>2500+</strong><span>Students</span></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><strong>120+</strong><span>Expert Faculty</span></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><strong>98%</strong><span>Pass Rate</span></div>
+    <div class="hstat-div"></div>
+    <div class="hstat"><strong>25+</strong><span>Years of Excellence</span></div>
+  </div>
+</section>
+
+<!-- NOTICE BOARD -->
+<section class="notice-section">
+  <div class="container">
+    <div class="notice-bar">
+      <div class="notice-label"><i class="fas fa-bullhorn"></i> Notice Board</div>
+      <div class="notice-ticker">
+        <div class="ticker-inner" id="ticker">
+          <span>📢 Admissions Open for 2025-26 Academic Year &nbsp;|&nbsp;</span>
+          <span>🏆 Our students scored 100% in Class X Board Exams &nbsp;|&nbsp;</span>
+          <span>📅 Annual Sports Day on 15th February 2025 &nbsp;|&nbsp;</span>
+          <span>🎨 Inter-School Art Competition — Register by Jan 30 &nbsp;|&nbsp;</span>
+          <span>📚 New Computer Lab inaugurated with 50 systems &nbsp;|&nbsp;</span>
+          <span>🎓 Scholarship exams for Class VI & IX on Feb 5th &nbsp;|&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Why Choose Us</span>
+      <h2>A School That Cares About Every Child</h2>
+      <p>We combine academic excellence with holistic development</p>
+    </div>
+    <div class="highlights-grid">
+      <div class="hl-card">
+        <div class="hl-icon" style="background:linear-gradient(135deg,#667eea,#764ba2)"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Expert Faculty</h3>
+        <p>120+ highly qualified teachers with 10+ years average experience in their subjects</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c)"><i class="fas fa-flask"></i></div>
+        <h3>Modern Labs</h3>
+        <p>State-of-the-art Science, Computer, and Language labs for hands-on learning</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"><i class="fas fa-trophy"></i></div>
+        <h3>Outstanding Results</h3>
+        <p>98% pass rate with 45+ students scoring above 90% in board exams every year</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"><i class="fas fa-futbol"></i></div>
+        <h3>Sports & Activities</h3>
+        <p>Cricket, Football, Basketball, Chess, Dance, Music and 20+ extracurricular clubs</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon" style="background:linear-gradient(135deg,#fa709a,#fee140)"><i class="fas fa-bus"></i></div>
+        <h3>Safe Transport</h3>
+        <p>GPS-tracked school buses covering 30+ routes with trained drivers and attendants</p>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"><i class="fas fa-laptop"></i></div>
+        <h3>Smart Classrooms</h3>
+        <p>All classrooms equipped with smart boards, projectors and digital learning tools</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results-section">
+  <div class="container">
+    <div class="section-head light">
+      <span class="tag tag-light">Academic Excellence</span>
+      <h2>Our Results Speak for Themselves</h2>
+      <p>Consistent top performers in State Board & CBSE examinations</p>
+    </div>
+    <div class="results-grid">
+      <div class="result-card">
+        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=300&q=80" alt="Topper"/>
+        <div class="result-info">
+          <h4>Priya Sharma</h4>
+          <p>Class X — 98.6%</p>
+          <span class="result-badge">State Topper</span>
+        </div>
+      </div>
+      <div class="result-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Topper"/>
+        <div class="result-info">
+          <h4>Arjun Reddy</h4>
+          <p>Class XII — 97.2%</p>
+          <span class="result-badge">District Topper</span>
+        </div>
+      </div>
+      <div class="result-card">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80" alt="Topper"/>
+        <div class="result-info">
+          <h4>Sneha Patel</h4>
+          <p>Class X — 96.8%</p>
+          <span class="result-badge">School Topper</span>
+        </div>
+      </div>
+      <div class="result-card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80" alt="Topper"/>
+        <div class="result-info">
+          <h4>Rahul Kumar</h4>
+          <p>Class XII — 95.4%</p>
+          <span class="result-badge">Science Topper</span>
+        </div>
+      </div>
+    </div>
+    <div class="results-summary">
+      <div class="rs-item"><h3>100%</h3><p>Class X Pass Rate 2024</p></div>
+      <div class="rs-item"><h3>98%</h3><p>Class XII Pass Rate 2024</p></div>
+      <div class="rs-item"><h3>45+</h3><p>Students scored above 90%</p></div>
+      <div class="rs-item"><h3>12</h3><p>State Rank Holders</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK ADMISSION CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-text">
+        <h2>Admissions Open for 2025–26</h2>
+        <p>Limited seats available. Apply now to secure your child's future at Sri Vidya Academy.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="admissions.html" class="btn-primary"><i class="fas fa-user-plus"></i> Apply Now</a>
+        <a href="tel:+919876543210" class="btn-call"><i class="fas fa-phone"></i> Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Parent Reviews</span>
+      <h2>What Parents Say About Us</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Sri Vidya Academy has transformed my daughter's life. The teachers are dedicated and the environment is very nurturing. Best decision we made!"</p>
+        <div class="testi-author"><div class="tav">R</div><div><strong>Ramesh Naidu</strong><small>Parent of Class VIII student</small></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"My son improved from 60% to 92% in just one year. The individual attention given by teachers here is exceptional. Highly recommended!"</p>
+        <div class="testi-author"><div class="tav">S</div><div><strong>Sunita Rao</strong><small>Parent of Class X student</small></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"The school's focus on both academics and extracurriculars is perfect. My child is confident, disciplined and excelling in studies."</p>
+        <div class="testi-author"><div class="tav">V</div><div><strong>Vijay Sharma</strong><small>Parent of Class VI student</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h3>🎓 Sri Vidya Academy</h3>
+      <p>Nurturing young minds with quality education, strong values, and a passion for excellence since 1999.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="courses.html">Classes</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Classes Offered</h4>
+      <a href="courses.html">Nursery & KG</a>
+      <a href="courses.html">Class I – V (Primary)</a>
+      <a href="courses.html">Class VI – X (Secondary)</a>
+      <a href="courses.html">Class XI – XII (Senior)</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-map-marker-alt"></i> 123, Education Road, Hyderabad - 500001</p>
+      <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fas fa-envelope"></i> info@srividyaacademy.edu</p>
+      <p><i class="fas fa-clock"></i> Mon–Sat: 8:00 AM – 4:00 PM</p>
+      <a href="admissions.html" class="btn-primary" style="margin-top:12px;display:inline-flex;font-size:.85rem;padding:10px 20px">Apply for Admission</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Sri Vidya Academy. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="school.js"></script>
+</body>
+</html>

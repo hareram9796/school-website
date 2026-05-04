@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admissions — Sri Vidya Academy</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand"><div class="brand-logo">🎓</div><div><span class="brand-name">Sri Vidya Academy</span><small>Excellence in Education</small></div></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Classes</a></li><li><a href="admissions.html" class="active">Admissions</a></li>
+    <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+    <li><a href="admissions.html" class="btn-admit">Apply Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+</nav>
+
+<div class="page-hero">
+  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=80" alt="Admissions" class="page-hero-bg"/>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content"><h1>Admissions 2025–26</h1><p>Secure your child's future — limited seats available</p></div>
+</div>
+
+<section class="admissions-page">
+  <div class="container">
+    <div class="admit-layout">
+
+      <!-- FORM -->
+      <div class="admit-form-wrap">
+        <div class="admit-form-header">
+          <h2>📋 Admission Enquiry Form</h2>
+          <p>Fill in the details and we'll contact you within 24 hours</p>
+        </div>
+        <form class="admit-form" id="admitForm" onsubmit="submitAdmission(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-child"></i> Student Name *</label>
+              <input type="text" id="stuName" placeholder="Full name of student" required/>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-calendar"></i> Date of Birth *</label>
+              <input type="date" id="stuDob" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-graduation-cap"></i> Applying for Class *</label>
+              <select id="stuClass" required>
+                <option value="">Select Class</option>
+                <option>Nursery</option><option>LKG</option><option>UKG</option>
+                <option>Class I</option><option>Class II</option><option>Class III</option>
+                <option>Class IV</option><option>Class V</option><option>Class VI</option>
+                <option>Class VII</option><option>Class VIII</option><option>Class IX</option>
+                <option>Class X</option><option>Class XI (Science)</option>
+                <option>Class XI (Commerce)</option><option>Class XII (Science)</option>
+                <option>Class XII (Commerce)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-school"></i> Previous School</label>
+              <input type="text" id="prevSchool" placeholder="Name of previous school"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-user"></i> Parent / Guardian Name *</label>
+              <input type="text" id="parentName" placeholder="Father / Mother name" required/>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-phone"></i> Phone Number *</label>
+              <input type="tel" id="parentPhone" placeholder="+91 XXXXX XXXXX" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-envelope"></i> Email Address</label>
+            <input type="email" id="parentEmail" placeholder="parent@email.com"/>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-map-marker-alt"></i> Residential Address *</label>
+            <textarea id="parentAddress" rows="3" placeholder="House no, Street, Area, City" required></textarea>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-comment"></i> Any Special Requirements / Message</label>
+            <textarea id="stuNote" rows="2" placeholder="Any specific requirements or questions..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;padding:15px;font-size:1rem">
+            <i class="fab fa-whatsapp"></i> Submit Enquiry via WhatsApp
+          </button>
+          <p class="form-note">* We'll call you within 24 hours to schedule a school visit</p>
+        </form>
+      </div>
+
+      <!-- SIDEBAR INFO -->
+      <div class="admit-info">
+        <div class="admit-info-card">
+          <h3>📅 Admission Schedule</h3>
+          <div class="schedule-item"><span class="sch-dot green"></span><div><strong>Form Available</strong><p>Jan 1 – Mar 31, 2025</p></div></div>
+          <div class="schedule-item"><span class="sch-dot blue"></span><div><strong>Entrance Test</strong><p>April 5 & 6, 2025</p></div></div>
+          <div class="schedule-item"><span class="sch-dot orange"></span><div><strong>Results</strong><p>April 10, 2025</p></div></div>
+          <div class="schedule-item"><span class="sch-dot red"></span><div><strong>Fee Payment</strong><p>April 15–30, 2025</p></div></div>
+          <div class="schedule-item"><span class="sch-dot purple"></span><div><strong>Classes Begin</strong><p>June 2, 2025</p></div></div>
+        </div>
+
+        <div class="admit-info-card">
+          <h3>📄 Documents Required</h3>
+          <ul class="doc-list">
+            <li><i class="fas fa-check-circle"></i> Birth Certificate</li>
+            <li><i class="fas fa-check-circle"></i> Previous Class Marksheet</li>
+            <li><i class="fas fa-check-circle"></i> Transfer Certificate</li>
+            <li><i class="fas fa-check-circle"></i> Aadhar Card (Student)</li>
+            <li><i class="fas fa-check-circle"></i> Parent ID Proof</li>
+            <li><i class="fas fa-check-circle"></i> 4 Passport Photos</li>
+            <li><i class="fas fa-check-circle"></i> Residence Proof</li>
+          </ul>
+        </div>
+
+        <div class="admit-info-card prospectus-card">
+          <h3>📥 Download Prospectus</h3>
+          <p>Get complete information about our school, fee structure, and admission process.</p>
+          <a href="#" onclick="downloadProspectus()" class="btn-primary" style="width:100%;justify-content:center;margin-top:12px">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+
+        <div class="admit-info-card">
+          <h3>📞 Contact Admissions</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919876543211">+91 98765 43211</a></p>
+          <p><i class="fas fa-envelope"></i> admissions@srividyaacademy.edu</p>
+          <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20enquire%20about%20admissions%20at%20Sri%20Vidya%20Academy" target="_blank" class="btn-wa" style="margin-top:12px">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="admitModal">
+  <div class="modal admit-success">
+    <div class="success-icon">🎉</div>
+    <h2>Enquiry Submitted!</h2>
+    <p id="admitMsg"></p>
+    <p class="modal-sub">Our admissions team will contact you within <strong>24 hours</strong>.</p>
+    <a id="admitWaLink" href="#" target="_blank" class="btn-wa" style="display:flex;justify-content:center;margin-bottom:10px">
+      <i class="fab fa-whatsapp"></i> Send via WhatsApp
+    </a>
+    <button onclick="closeAdmitModal()" class="btn-primary" style="width:100%">Done</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col"><h3>🎓 Sri Vidya Academy</h3><p>Nurturing young minds since 1999.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone"></i> +91 98765 43210</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Sri Vidya Academy. All Rights Reserved.</p></div>
+</footer>
+<script src="school.js"></script>
+</body>
+</html>
